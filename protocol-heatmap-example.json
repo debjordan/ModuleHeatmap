@@ -1,0 +1,79 @@
+{
+  "networkProtocolMonitor": {
+    "userId": "user123",
+    "hostIp": "192.168.1.100",
+    "monitoringPeriod": "October 2024",
+    
+    "protocolSummary": {
+      "totalConnections": 1287,
+      "uniqueDestinations": 24,
+      "uniqueProtocols": 5
+    },
+    
+    "heatmapData": {
+      "totalConnections": 1287,
+      "protocols": ["SSH", "HTTP", "HTTPS", "FTP", "ICMP"],
+      "timeStructure": {
+        "months": ["Oct"],
+        "days": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "weeks": 4
+      },
+      
+      "sshActivity": {
+        "totalConnections": 325,
+        "port": 22,
+        "commonDestinations": ["192.168.1.10", "10.0.1.5"],
+        "heatmap": [
+          {"week": 40, "mon": 8, "tue": 6, "wed": 7, "thu": 5, "fri": 10, "sat": 1, "sun": 0},
+          {"week": 41, "mon": 12, "tue": 9, "wed": 8, "thu": 7, "fri": 11, "sat": 2, "sun": 1}
+        ]
+      },
+      
+      "httpActivity": {
+        "totalConnections": 420,
+        "port": 80,
+        "commonDomains": ["google.com", "github.com", "stackoverflow.com"],
+        "heatmap": [
+          {"week": 40, "mon": 15, "tue": 12, "wed": 14, "thu": 13, "fri": 18, "sat": 3, "sun": 2},
+          {"week": 41, "mon": 20, "tue": 16, "wed": 18, "thu": 15, "fri": 22, "sat": 4, "sun": 3}
+        ]
+      },
+      
+      "httpsActivity": {
+        "totalConnections": 380,
+        "port": 443,
+        "commonDomains": ["google.com", "github.com", "slack.com"],
+        "heatmap": [
+          {"week": 40, "mon": 14, "tue": 11, "wed": 13, "thu": 12, "fri": 16, "sat": 2, "sun": 1},
+          {"week": 41, "mon": 18, "tue": 14, "wed": 16, "thu": 13, "fri": 20, "sat": 3, "sun": 2}
+        ]
+      },
+      
+      "ftpActivity": {
+        "totalConnections": 85,
+        "port": 21,
+        "commonServers": ["ftp.company.com", "192.168.1.50"],
+        "heatmap": [
+          {"week": 40, "mon": 3, "tue": 2, "wed": 4, "thu": 2, "fri": 5, "sat": 0, "sun": 0},
+          {"week": 41, "mon": 4, "tue": 3, "wed": 5, "thu": 3, "fri": 6, "sat": 1, "sun": 0}
+        ]
+      },
+      
+      "icmpActivity": {
+        "totalPackets": 77,
+        "type": "ping",
+        "commonTargets": ["8.8.8.8", "192.168.1.1"],
+        "heatmap": [
+          {"week": 40, "mon": 2, "tue": 1, "wed": 3, "thu": 2, "fri": 4, "sat": 0, "sun": 0},
+          {"week": 41, "mon": 3, "tue": 2, "wed": 4, "thu": 2, "fri": 5, "sat": 0, "sun": 0}
+        ]
+      }
+    },
+    
+    "securityMetrics": {
+      "unusualProtocols": 0,
+      "afterHoursActivity": 3,
+      "externalConnections": 890
+    }
+  }
+}
