@@ -1,0 +1,6 @@
+@ModuleHeatMap.API_HostAddress = http://localhost:5082
+
+GET {{ModuleHeatMap.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
